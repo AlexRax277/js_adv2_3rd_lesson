@@ -1,0 +1,27 @@
+html,
+body {
+  margin: 0;
+}
+.field {
+  overflow: hidden;
+  
+}
+section {
+  margin: -1%;
+  padding: 20px;
+}
+.zone {
+  background: #000;
+  float: left;
+  height: 12vw;
+  margin: 1%;
+  width: 20%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.img_goblin {
+  cursor: url("/src/img/hammer.png"), pointer;
+  width: 4vw;
+  height: 4vw;
+  margin: 3.5vw;
+}
