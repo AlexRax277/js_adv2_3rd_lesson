@@ -1,4 +1,6 @@
 import changeCursor from './change_cursor.js';
+import imgBang from '../img/bang.png';
+import imgOuch from '../img/ouch.png';
 
 export default class Goblin {
   constructor(goblin, field, mainCounter = 0, winPunches = 0) {
@@ -22,11 +24,11 @@ export default class Goblin {
   getClick() {
     document.addEventListener('click', (event) => {
       if (event.target.className === 'img_goblin') {
-        changeCursor('/src/img/bang.png');
+        changeCursor(imgBang);
         this.mainCounter -= 1;
         this.winPunches += 1;
       } else {
-        changeCursor('/src/img/ouch.png');
+        changeCursor(imgOuch);
         this.mainCounter += 1;
       }
     });

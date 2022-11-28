@@ -1,4 +1,5 @@
 import Goblin from './goblin.js';
+import imgGoblin from '../img/goblin.png';
 
 export default function mainFoo() {
   const field = document.createElement('div');
@@ -19,7 +20,7 @@ export default function mainFoo() {
   const image = document.createElement('img');
   image.alt = 'goblin';
   image.classList = 'img_goblin';
-  image.src = '/src/img/goblin.png';
+  image.src = imgGoblin;
   document.body.appendChild(image);
 
   const goblin = new Goblin(document.querySelector('.img_goblin'), document.querySelectorAll('.zone'));
